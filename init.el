@@ -12,3 +12,8 @@
  )
 
 (setq mac-command-modifier 'meta)
+
+;; Add marmalade packages to list
+(require 'package)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/") t)
