@@ -11,9 +11,23 @@
  ;; If there is more than one, they won't work right.
  )
 
+
+
+;;
+;; Packages installed:
+;; - magit
+;; - color-theme-solarized
+;;
+
+;; Use command for meta
 (setq mac-command-modifier 'meta)
 
 ;; Add marmalade packages to list
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
+
+
+;; Solarized Theme
+(add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/color-theme-solarized-20120301")
+(load-theme 'solarized-dark t)
