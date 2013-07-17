@@ -20,7 +20,8 @@
 ;;
 
 ;; Use command for meta
-(setq mac-command-modifier 'meta)
+(when window-system
+  (setq mac-command-modifier 'meta))
 
 ;; Add marmalade packages to list
 (require 'package)
