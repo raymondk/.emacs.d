@@ -32,3 +32,7 @@
 ;; Solarized Theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/color-theme-solarized-20120301")
 (load-theme 'solarized-dark t)
+
+;;Enable ido
+(require 'ido)
+(ido-mode t)
