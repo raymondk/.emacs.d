@@ -1,3 +1,11 @@
+;;; package --- Summary 
+;;;
+;;;
+;;; Commentary:
+;;; Code:
+;;;
+;;;
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -22,6 +30,8 @@
 ;; - linum
 ;; - jedi
 ;; - virtualenv
+;; - flycgecj
+;;
 
 ;; Use command for meta
 (when window-system
@@ -49,3 +59,12 @@
 (autoload 'jedi:setup "jedi" nil t)
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:setup-keys t)
+
+;; flycheck
+(add-hook 'after-init-hook #'global-flycheck-mode)
+
+(add-to-list 'load-path "~/.emacs.d/autopair/")
+(require 'autopair)
+(autopair-global-mode) ;; to enable in all buffers
+
+;;; init.el ends here

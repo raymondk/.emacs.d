@@ -1,9 +1,7 @@
 *~
 auto-save-list
-elpa
 url
 *.elc
 bookmarks
 emacs-jedi/
 ac-comphist.dat
-
