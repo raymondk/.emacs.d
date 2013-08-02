@@ -63,8 +63,12 @@
 ;; flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
-(add-to-list 'load-path "~/.emacs.d/autopair/")
-(require 'autopair)
-(autopair-global-mode) ;; to enable in all buffers
+;;(add-to-list 'load-path "~/.emacs.d/autopair/")
+;;(require 'autopair)
+;;(autopair-global-mode) ;; to enable in all buffers
+
+;; Unique names when buffers have the same name
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'post-forward-angle-brackets)
 
 ;;; init.el ends here

@@ -2,6 +2,10 @@
 auto-save-list
 url
 *.elc
+elpa/archives
+elpa/archives/gnu/archive-contents
 bookmarks
 emacs-jedi/
 ac-comphist.dat
+.emacs.desktop*
+tramp
