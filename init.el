@@ -59,6 +59,7 @@
 (autoload 'jedi:setup "jedi" nil t)
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:setup-keys t)
+(setq jedi:complete-on-dot t)
 
 ;; flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
@@ -70,5 +71,9 @@
 ;; Unique names when buffers have the same name
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
+
+;; Save session
+(setq desktop-save 'if-exists)
+(desktop-save-mode 1)
 
 ;;; init.el ends here
